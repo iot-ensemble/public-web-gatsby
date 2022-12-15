@@ -47,7 +47,7 @@ jobs:
       - run: |
           echo "Set Variable Checks ${{ github.ref }}"
           echo "Current branch is ${{ steps.vars.outputs.branchName }}"
-          echo "Version bump type is ${{ steps.vars.outputs.versionBump }}"
+          echo "Version bump type is ${{ steps.vars.outputs.versionBump }}" 
 
       # Check package.json exists
       - name: Check package.json existence
