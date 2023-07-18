@@ -57,7 +57,7 @@ jobs:
         uses: fathym/github-tag-action@master
         id: versionBump
         env:
-          DEFAULT_BUMP: ${{ steps.vars.outputs.versionBump }}
+          DEFAULT_BUMP: ${{ steps.vars.outputs.versionBump }} 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RELEASE_BRANCHES: .*
           WITH_V: false
